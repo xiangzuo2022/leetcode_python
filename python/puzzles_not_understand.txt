@@ -1,0 +1,4 @@
+837: 看了很多题解还是不太明白
+https://blog.csdn.net/fuxuemingzhu/article/details/83615241
+https://www.cnblogs.com/grandyang/p/10386525.html
+https://leetcode-cn.com/problems/new-21-game/solution/xin-21dian-by-leetcode/
