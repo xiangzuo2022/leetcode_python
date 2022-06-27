@@ -97,7 +97,8 @@ class Solution:
 如果要copy一个带有random pointer的list，主要的问题就是有可能这个random指向的位置还没有被copy到，所以解决方法都是多次扫描list。
 第一种方法，就是使用HashMap来坐，HashMap的key存原始pointer，value存新的pointer。
 第一遍，先不copy random的值，只copy数值建立好新的链表。并把新旧pointer存在HashMap中。
-第二遍，遍历旧表，复制random的值，因为第一遍已经把链表复制好了并且也存在HashMap里了，所以只需从HashMap中，把当前旧的node.random作为key值，得到新的value的值，并把其赋给新node.random就好。
+第二遍，遍历旧表，复制random的值，因为第一遍已经把链表复制好了并且也存在HashMap里了，所以只需从HashMap中，把当前旧的node.random作为key值，
+得到新的value的值，并把其赋给新node.random就好。
 可以合并两遍scan为一个
 """
 class Solution:
@@ -194,6 +195,43 @@ class Solution(object):
         node.random = self.copyRandomList(head.random)
 
         return node
+
+"""
+Approach 1: https://leetcode.cn/problems/copy-list-with-random-pointer/solution/liang-chong-shi-xian-tu-jie-138-fu-zhi-dai-sui-ji-/
+"""
+class Solution(object):
+    def copyRandomList(self, head):
+        if not head:
+            return None
+        p = head
+        # 第一步，在每个原节点后面创建一个新节点
+        # 1->1'->2->2'->3->3'
+        while p:
+            new_node = Node(p.val,None,None)
+            new_node.next = p.next
+            p.next = new_node
+            p = new_node.next
+        p = head
+        # 第二步，设置新节点的随机节点
+        while p:
+            if p.random:
+                p.next.random = p.random.next
+            p = p.next.next
+        # 第三步，将两个链表分离
+        p = head
+        dummy = Node(-1,None,None)
+        cur = dummy
+        while p:
+            cur.next = p.next
+            cur = cur.next
+            p.next = cur.next
+            p = p.next
+        return dummy.next
+
+作者：wang_ni_ma
+链接：https://leetcode.cn/problems/copy-list-with-random-pointer/solution/liang-chong-shi-xian-tu-jie-138-fu-zhi-dai-sui-ji-/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
 
