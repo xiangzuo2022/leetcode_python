@@ -1,5 +1,5 @@
 """
-蓄水池抽样算法
+蓄水池抽样算法: time limit
 """
 class Solution(object):
 
@@ -21,6 +21,6 @@ class Solution(object):
             if v == target:
                 count += 1
                 chance = random.randint(1, count)
-                if chance == count:
+                if(chance % count == 0):                
                     res = i
         return res
