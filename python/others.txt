@@ -1,0 +1,23 @@
+参考资料
+
+
+
+
+
+
+https://github.com/nanotrt/Introduction-to-Algorithms
+
+
+总结：
+基本上来源是这么几个地方，首先很多基础的东西主要来自四门课，CS61B by UCB, 
+CS106B by Stanford, Algorithm by Princeton, CSAPP by CMU.这些公开课都是精品中的精品，转专业的要打好基础尽量过一遍这https://algs4.cs.princeton.edu/些课程。
+其他的主要是一些算法的应用和讲解。
+主要推荐的有，
+YouTube的WilliamFiest，这个人做的图片和动图很好，思路很清晰。
+YouTube上印度博主Ravindrababu Ravula，用的白板，思路也很清晰。
+B站up主正月点灯笼，这个up主很细致，而且会带你走Uncode - GATE Computer Science一遍过程，写一遍代码。
+B站up主大雪菜，讲得很清晰，而且每个题都会现场示范代码实现。
+微信公众号 labuladong， 讲了很多算法，总结得挺到位的。
+力扣国服liweiwei1419，可能是目前最好的回溯算法讲解。
+
+
