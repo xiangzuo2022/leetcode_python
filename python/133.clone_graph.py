@@ -125,8 +125,28 @@ class Solution:
 
 
 
+class Solution {
+    unordered_map<Node*, Node*>Map;
+public:
+    Node* cloneGraph(Node* node) 
+    {   
+        if(node == NULL)return node;
+        if (Map.find(node)!=Map.end())
+            return Map[node];
+            
+        Node* newNode = new Node(node->val);
+        Map[node] = newNode;
+        
+        for (int i=0; i<node->neighbors.size(); i++)
+        {
+            newNode->neighbors.push_back(cloneGraph(node->neighbors[i]));
+        }
+        
+        return newNode;
+    }
 
-
+};
+https://www.youtube.com/watch?v=yE4qcjabHqY&t=450s
 
 
 
