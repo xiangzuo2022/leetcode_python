@@ -128,7 +128,27 @@ class Solution(object):
 
         return j
 
+# ChatGPT
+def removeDuplicates(nums):
+    if len(nums) <= 2:
+        return len(nums)  # No duplicates to remove if the array length is 2 or less
+    
+    k = 2  # Maximum allowed occurrences of each unique element
+    
+    count = 1  # Count of the current element
+    index = 1  # Index to place the next unique element
+    
+    for i in range(1, len(nums)):
+        if nums[i] == nums[i - 1]:
+            count += 1
+        else:
+            count = 1  # Reset count for a new unique element
         
+        if count <= k:
+            nums[index] = nums[i]
+            index += 1
+    
+    return index  # Length of the modified array
     
 
                

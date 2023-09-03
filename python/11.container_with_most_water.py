@@ -60,6 +60,29 @@ class Solution:
             else:
                 p2 -= 1
         return maxArea
+    
+
+# soluction given by chatgpt
+class Solution(object):
+    def maxArea(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+        left, right = 0, len(height) - 1
+        maxWater = 0
+        while left < right:
+            h_left = height[left]
+            h_right = height[right]
+            width = right - left
+            min_h = min(h_left, h_right)
+            maxWater = max(maxWater, width * min_h)
+
+            if h_left < h_right:
+                left += 1
+            else:
+                right -= 1
+        return maxWater
 
 
 

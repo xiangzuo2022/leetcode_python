@@ -38,3 +38,20 @@ class Solution(object):
                 p1 +=1 
                 p2 +=1 
         return nums
+    
+
+# chatgpt
+def move_zeros(nums):
+    slow = 0
+
+    # Iterate through the array with the fast pointer
+    for fast in range(len(nums)):
+        if nums[fast] != 0:
+            # When a non-zero element is found, move it to the slow pointer position
+            nums[slow], nums[fast] = nums[fast], nums[slow]
+            slow += 1
+
+# Example usage
+nums = [0, 1, 0, 3, 12]
+move_zeros(nums)
+print(nums)  # Output: [1, 3, 12, 0, 0]
