@@ -32,4 +32,48 @@ class Solution:
     		start.next = res[0]
     		start = res[1]
     	return nhead.next
+	
+
+
+# https://www.youtube.com/watch?v=1UOPsfP85V4
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def reverseKGroup(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        """
+        dummy = ListNode(0, head)
+        groupPrev = dummy # save a node one more before the group
+
+        while True:
+            kth = self.getKth(groupPrev, k)
+            if not kth:
+                break
+            groupNext = kth.next # track the node right after the group
+
+            # reverse group
+            prev = kth.next
+            curr = groupPrev.next # first node in the group
+            while curr != groupNext:
+                tmp = curr.next
+                curr.next = prev
+                prev = curr
+                curr = tmp
+
+            tmp = groupPrev.next
+            groupPrev.next = kth
+            groupPrev = tmp
+        return dummy.next
+
+    def getKth(self, curr, k):
+        while curr and k > 0:
+            curr = curr.next
+            k -= 1
+        return curr
 

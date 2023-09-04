@@ -28,3 +28,56 @@ class Solution:
 链接：https://leetcode-cn.com/problems/next-greater-element-i/solution/496xia-yi-ge-geng-da-yuan-su-i-by-qingfe-qfu9/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+# https://www.youtube.com/watch?v=68a1Dc_qVq4
+"""
+O(n*m) time complexity and O(m) memory complexity by using hashmap
+"""
+class Solution(object):
+    def nextGreaterElement(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        nums1Idx = {n:i for i, n in enumerate(nums1)}
+        res = [-1] * len(nums1)
+        n = len(nums2)
+
+        for i in range(len(nums2)):
+            if nums2[i] not in nums1Idx:
+                continue
+            for j in range(i+1, len(nums2)):
+                if nums2[j] > nums2[i]:
+                    idx = nums1Idx[nums2[i]]
+                    res[idx] = nums2[j]
+                    break
+        return res
+    
+# using monotic stack O(m+n) time complexity
+class Solution(object):
+    def nextGreaterElement(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        nums1Idx = {n:i for i, n in enumerate(nums1)}
+        res = [-1] * len(nums1)
+        n = len(nums2)
+
+        stack = []
+        for i in range(len(nums2)):
+            cur = nums2[i]
+            while stack and cur > stack[-1]:
+                val = stack.pop()
+                idx = nums1Idx[val]
+                res[idx] = cur
+            if cur in nums1Idx:
+                stack.append(cur)
+        return res
+    
+"""
+using nums1 to build up a hashmap for the elements map to its indexes
+"""
+

@@ -83,7 +83,33 @@ class Solution(object):
             else:
                 stack.append(ch)
         return stack == []
-        
+    
+# https://www.youtube.com/watch?v=WTzjTskDFMg
+
+"""
+([)] this case does not work beause the order is not right; we can start with open brackets but not close brackets
+"""
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        stack = []
+        closeToOpen = {")":"(", "]":"[", "}":"{"}
+
+        for c in s:
+            if c in closeToOpen:
+                if stack and closeToOpen[c] == stack[-1]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(c)
+        return stack == []
+
+
+
 
 
 

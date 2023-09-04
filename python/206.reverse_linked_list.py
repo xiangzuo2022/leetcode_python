@@ -164,9 +164,53 @@ class Solution:
             return reverse(cur,tmp)
         
         return reverse(None,head)
+# recursion
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+         # Base case: if the list is empty or has only one node, return the current head
+        if head is None or head.next is None:
+            return head
+
+        # Recursively reverse the sublist starting from the next node
+        reversed_head  = self.reverseList(head.next)
+
+        # Reverse the current node's pointer to the next node
+        head.next.next = head
+        head.next = None
+
+        return reversed_head
 
 
-
+# https://www.youtube.com/watch?v=G0_I-ZF0S38&list=PLot-Xpze53leU0Ec0VkBhnf4npMRFiNcB&index=3
+# interative solution
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """   
+        prev = None
+        cur = head
+        while cur:
+            temp = cur.next
+            cur.next = prev
+            prev = cur
+            cur = temp
+        return prev
 
 
 
