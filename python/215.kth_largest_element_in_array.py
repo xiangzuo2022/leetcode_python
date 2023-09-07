@@ -102,8 +102,53 @@ if __name__ == '__main__':
 	a = Solution()
 	a.findKthLargest([2,1], 1)
 
+#https://www.youtube.com/watch?v=XEmy13g1Qxc
+"""
+heap solution O(n + k*log(n))
+"""
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        maxHeap = []
+        for num in nums:
+            heapq.heappush(maxHeap, -num)
+
+        for i in range(k):
+            res = heapq.heappop(maxHeap)
+        return -res
 
 
+"""
+quick select average: O(n), worst case: O(n^2)
+https://leetcode.com/problems/kth-largest-element-in-an-array/editorial/
+"""
+class Solution:
+    def findKthLargest(self, nums, k):
+        def quick_select(nums, k):
+            pivot = random.choice(nums)
+            left, mid, right = [], [], []
+
+            for num in nums:
+                if num > pivot:
+                    left.append(num)
+                elif num < pivot:
+                    right.append(num)
+                else:
+                    mid.append(num)
+            
+            if k <= len(left):
+                return quick_select(left, k)
+            
+            if len(left) + len(mid) < k:
+                return quick_select(right, k - len(left) - len(mid))
+            
+            return pivot
+        
+        return quick_select(nums, k)
 
 
 

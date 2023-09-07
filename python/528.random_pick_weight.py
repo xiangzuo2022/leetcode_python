@@ -51,3 +51,34 @@ Solution 2
         for index, prefix_sum in enumerate(self.prefix_sum):
             if seed <= prefix_sum:
                 return index
+
+# prefix sum + binary search          
+import random
+class Solution(object):
+
+    def __init__(self, w):
+        """
+        :type w: List[int]
+        """
+        self.n = len(w)
+        self.prefix_sum = [0] * self.n
+        self.prefix_sum[0] = w[0]
+    
+        for i in range(1, self.n):
+            self.prefix_sum[i] = self.prefix_sum[i-1] + w[i]            
+        
+
+    def pickIndex(self):
+        """
+        :rtype: int
+        """
+        target = self.prefix_sum[-1] * random.random()
+        low, high = 0, len(self.prefix_sum)-1
+        while low < high:
+            mid = low + (high - low)//2
+            if target > self.prefix_sum[mid]:
+                low = mid + 1
+            else:
+                high = mid
+        return low
+        

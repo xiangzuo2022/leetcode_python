@@ -41,6 +41,77 @@ class Solution:
 
 
 
+#https://www.youtube.com/watch?v=q5a5OiGbT6Q
+"""
+merge two list each time: O(k)
+"""
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        if not lists or len(lists) == 0: return None
+        while len(lists) > 1:
+            mergedLists = []
+            for i in range(0, len(lists), 2):
+                l1 = lists[i]
+                l2 = lists[i+1] if (i+1) < len(lists) else None
+                mergedLists.append(self.mergeList(l1, l2))
+            lists = mergedLists  
+        return lists[0]      
+
+
+    def mergeList(self, l1, l2):
+        dummy = ListNode()
+        p = dummy
+
+        while l1 and l2:
+            if l1.val < l2.val:
+                p.next = l1
+                l1 = l1.next
+            else:
+                p.next = l2
+                l2 = l2.next
+            p = p.next
+        
+        if l1:
+            p.next = l1
+        if l2:
+            p.next = l2
+        return dummy.next
+    
+
+# heap 
+class Solution(object):
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        heap = []
+        for node in lists:
+            if node:
+                heapq.heappush(heap, (node.val, node)) 
+        head = ListNode(0)
+        curr = head
+        while heap:
+            a = heapq.heappop(heap)
+            curr.next = ListNode(a[0])
+            curr = curr.next
+            if a[1].next:
+                heapq.heappush(heap, (a[1].next.val, a[1].next))
+        return head.next
+
+
+
+
+
 
 
 
