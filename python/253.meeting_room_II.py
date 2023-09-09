@@ -91,4 +91,28 @@ class Solution:
             start_pointer += 1   
 
         return used_rooms
+    
+# https://www.youtube.com/watch?v=FdzJmTCVyJU&t=275s
+# time complexity: O(n)
+class Solution(object):
+    def minMeetingRooms(self, intervals):
+        """
+        :type intervals: List[List[int]]
+        :rtype: int
+        """
+        start = sorted([i[0] for i in intervals])
+        end = sorted([i[1] for i in intervals])
+
+        res, count = 0, 0
+        s, e = 0, 0
+
+        while s < len(intervals):
+            if start[s] < end[e]:
+                s += 1
+                count += 1
+            else:
+                e += 1
+                count -= 1
+            res = max(res, count)
+        return res
 

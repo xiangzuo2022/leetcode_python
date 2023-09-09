@@ -32,3 +32,33 @@ class Solution(object):
         if queue:
             ans.append(queue[0][1])
         return "".join(ans)
+    
+
+# https://www.youtube.com/watch?v=2g_b1aYTHeg
+class Solution(object):
+    def reorganizeString(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        count = Counter(s)
+        maxHeap = [[-cnt, char] for char, cnt in count.items()]
+        heapq.heapify(maxHeap) # O(n)
+
+        prev = None
+        res = ""
+
+        while maxHeap or prev:
+            if not maxHeap and prev: # cannot find valid strings and return ""
+                return ""
+            cnt, char = heapq.heappop(maxHeap)
+            res += char
+            cnt += 1
+            
+            if prev:
+                heapq.heappush(maxHeap, prev)
+                prev = None
+
+            if cnt != 0: # need this condition
+                prev = [cnt, char]
+        return res

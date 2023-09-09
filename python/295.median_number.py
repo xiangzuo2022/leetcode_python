@@ -37,3 +37,42 @@ class MedianFinder:
 # mf = MedianFinder()
 # mf.addNum(1)
 # mf.findMedian()
+
+
+#https://www.youtube.com/watch?v=itmhHWaHupI
+class MedianFinder(object):
+
+    def __init__(self):
+        self.small = [] # maxheap
+        self.large = [] # minheap   
+        
+
+    def addNum(self, num):
+        """
+        :type num: int
+        :rtype: None
+        """
+        heapq.heappush(self.small, -1 * num)
+        # make sure every num in small <= every num in large
+        if self.small and self.large and (-1 * self.small[0]) > self.large[0]:
+            val = -1 * heapq.heappop(self.small)
+            heapq.heappush(self.large, val)
+        # uneven size
+        if len(self.small) > len(self.large) + 1:
+            val = -1 * heapq.heappop(self.small)
+            heapq.heappush(self.large, val)
+        if len(self.large) > len(self.small) + 1:
+            val = heapq.heappop(self.large)
+            heapq.heappush(self.small, -1 * val)
+        
+
+    def findMedian(self):
+        """
+        :rtype: float
+        """
+        if len(self.small) > len(self.large):
+            return -1 * self.small[0]
+        if len(self.large) > len(self.small):
+            return self.large[0]
+        else:            
+            return (-1 * self.small[0] + self.large[0]) / 2.0 # must be a float 2.0 otherwise cannot pass testcases on leetcode
