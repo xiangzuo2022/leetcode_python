@@ -44,3 +44,6 @@ class Solution(object):
             res += d.get(s-k, 0)
             d[s] = d.get(s, 0) + 1
         return res
+    
+# https://www.youtube.com/watch?v=fFVZt-6sgyo
+# prefixSum + hashmap

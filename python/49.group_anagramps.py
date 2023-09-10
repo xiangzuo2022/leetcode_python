@@ -94,6 +94,7 @@ class Solution(object):
 
 """
 official solution
+using sorted, the time complexity is O(nlogn)
 """
 class Solution(object):
     def groupAnagrams(self, strs):
@@ -108,6 +109,23 @@ class Solution(object):
         return list(d.values())
 
 
+# https://www.youtube.com/watch?v=vzdNOK2oB2E
+# HashMap O(m+n), m is the length of the list and n is the average length of a string
+class Solution(object):
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        res = defaultdict(list)
+
+        for s in strs:
+            count = [0] * 26
+            for c in s:
+                count[ord(c) - ord('a')] += 1
+            res[tuple(count)].append(s)
+            
+        return res.values()
 
 
 

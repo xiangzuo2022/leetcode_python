@@ -234,6 +234,33 @@ class Solution(object):
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
+# https://www.youtube.com/watch?v=5Y2EiZST97Y&t=5s
+# O(n) hashmap + two passes of the linked list
+
+class Solution(object):
+    def copyRandomList(self, head):
+        """
+        :type head: Node
+        :rtype: Node
+        """
+        oldToCopy = {None:None}
+        cur = head
+        # clone the old list nodes
+        while cur:
+            copy = Node(cur.val)
+            oldToCopy[cur] = copy
+            cur = cur.next
+
+        cur = head
+        while cur:
+            copy = oldToCopy[cur]
+            copy.next = oldToCopy[cur.next]
+            copy.random = oldToCopy[cur.random]
+            cur = cur.next
+        return oldToCopy[head]
+
+
+
 
 
 

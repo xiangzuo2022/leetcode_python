@@ -5,7 +5,7 @@
 
 
 
-Heap
+# Heap
 1. 23
 2. 347
 3. 253
@@ -15,9 +15,102 @@ Heap
 7. 215
 
 
+# HashMap
+1. 1
+2. 560
+3. 3
+4. 49
+5. 138
+6. 340 (Needcode no)
+7. 554
+8. 535
 
 
 
 
 Good Questions:
 1. 528
+
+
+OpenAI
+DataBrick
+Cohere
+Snorkel
+Google
+Inception
+Anthetic
+Adept
+Nvidia
+Micrsoft
+Cresta
+Roblox
+AWS
+Salesforce
+
+******************************************
+meta
+robust intelligence
+Apple
+DoorDash
+Airbnb
+Tiktok
+ServiceNow
+Uber
+Palo Alto Network
+SnowFlake
+Adobe
+Pinterest
+SAP
+Snap
+WalmartLab
+NetFlix
+Box
+Stripe
+cruise
+zoom
+LinkedIn
+Tesla
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

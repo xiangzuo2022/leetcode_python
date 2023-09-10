@@ -44,3 +44,23 @@ class Solution:
             j = hashmap.get(target - num)
             if j is not None and i!=j:
                 return [i,j]
+            
+
+# https://www.youtube.com/watch?v=KLlXCFG5TnA
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        d = {}
+        
+        for index, val in enumerate(nums):
+            diff = target - val
+            if diff not in d:
+                d[val] = index
+            else:
+                return [d[diff], index]
+        return []
+                
