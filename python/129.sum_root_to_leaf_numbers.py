@@ -72,6 +72,31 @@ class Solution(object):
             else:
                 return dfs(node.left, total) + dfs(node.right, total)
         return dfs(root, 0)
+    
+
+# https://www.youtube.com/watch?v=Jk16lZGFWxE
+# DFS
+class Solution(object):
+    def sumNumbers(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+
+        def dfs(node, num):
+            if not node:
+                return 0
+            num = num * 10 + node.val
+            if not node.left and not node.right:  # leaf node
+                return num
+            return dfs(node.left, num) + dfs(node.right, num)
+        
+        return dfs(root, 0) # use 0 can solve many edge cases
+
+        #.   1
+        #. 2.   3
+
+        # 0 * 10 + 1. = 1
 
 
 

@@ -127,7 +127,22 @@ class Solution(object):
                 return False
         
         return valid(root, -sys.maxint, sys.maxint)
+    
 
+# https://leetcode.com/problems/validate-binary-search-tree/description/
+# DFS O(n), update the left and right boundary values is the key
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        def valid(node, left, right):
+            if not node: return True
+            if not (node.val < right and node.val > left):
+                return False
+            return (valid(node.left, left, node.val) and valid(node.right, node.val, right))
+        return valid(root, float("-inf"), float("inf"))
 
 
 

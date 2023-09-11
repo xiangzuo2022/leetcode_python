@@ -26,7 +26,48 @@
 8. 535
 
 
+# Tree -- BFS
+1. 102
+2. 104
+3. 199
+4. 101
+5. 103
+6. 111 (no needcode)
+7. 515 (no needcode)
+8. 429 (no needcode)
 
+
+# Tree -- DFS
+1. 124
+2. 129
+3. 98
+4. 110
+5. 113
+6. 236
+7. 450
+8. 508
+
+
+
+
+
+
+# Graph -- BFS
+
+
+# Graph -- DFS
+
+# DP -- Search
+
+# DP -- 2
+
+# DP -- 3
+
+# DP -- 4
+
+# DP -- 5
+
+# Backtracking
 
 Good Questions:
 1. 528

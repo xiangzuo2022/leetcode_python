@@ -56,6 +56,9 @@ class Solution(object):
         right = max(0,self.helper(root.right))
         self.maxValue = max(self.maxValue, left+right+root.val)
         return max(left,right) + root.val
+    
+# https://www.youtube.com/watch?v=Hr5cWUld4vU
+
 
 
 

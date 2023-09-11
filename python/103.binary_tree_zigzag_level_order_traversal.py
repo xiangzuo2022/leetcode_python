@@ -82,4 +82,78 @@ class Solution(object):
             ans.append(temp)
             level += 1
         return ans
-                    
+    
+
+# the  wrong solution
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def zigzagLevelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root: return []
+        q = collections.deque([root])
+        res = []
+        level = 1
+        while q:
+            qLen = len(q)
+            temp = []            
+            for i in range(qLen):
+                node = q.popleft()
+                if node:
+                    temp.append(node.val)
+                    if level % 2 != 0:
+                        if node.right:
+                            q.append(node.right) # we should append value in oppsite order not the node itself. Otherwise, later the node's left and right push in the queue will be a choas. 
+                        if node.left:
+                            q.append(node.left)
+                    else:
+                        if node.left:
+                            q.append(node.left)
+                        if node.right:
+                            q.append(node.right)
+            level += 1
+            res.append(temp)
+        return res
+            
+
+ # https://www.youtube.com/watch?v=igbboQbiwqw
+ # BFS 
+ # # Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def zigzagLevelOrder(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        if not root: return []
+        q = collections.deque([root])
+        res = []
+        level = 1
+        while q:
+            qLen = len(q)
+            temp = []            
+            for i in range(qLen):
+                node = q.popleft()
+                temp.append(node.val)                
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            if level % 2 == 0:
+                res.append(reversed(temp))
+            else:
+                res.append(temp)
+            level += 1            
+        return res                   
