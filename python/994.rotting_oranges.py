@@ -31,3 +31,41 @@ class Solution(object):
             fresh -= rotten
             time += 1
         return time
+    
+# https://www.youtube.com/watch?v=y704fEOx0s0
+# mutisource BFS is the solution; DFS cannot get the shortedst time units
+# time complexity O(n*m) and memory O(n*m)
+# the stopping condition is fresh oranges == 0, NOT the queue is empty. Because the fresh orange can be in the corner that no rotten
+# orange can infect it.
+class Solution(object):
+    def orangesRotting(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        q = deque()        
+        time, fresh = 0, 0
+        direct = [[0, 1],[1, 0],[0, -1],[-1, 0]]
+        ROWS, COLS = len(grid), len(grid[0])
+
+        # get number of fresh oranges and put rotten oranges in the queue
+        for i in range(ROWS):
+            for j in range(COLS):
+                if grid[i][j] == 1:
+                    fresh += 1
+                if grid[i][j] == 2:
+                    q.append([i, j])
+
+        while q and fresh > 0:
+            for i in range(len(q)):
+                r, c = q.popleft()
+                for dr, dc in direct:
+                    row, col = r + dr, c + dc
+                    # if in bounds and fresh, make rotten
+                    if row < 0 or col < 0 or row == ROWS or col == COLS or grid[row][col] != 1:
+                        continue
+                    grid[row][col] = 2
+                    fresh -= 1
+                    q.append([row, col])
+            time += 1
+        return time if fresh == 0 else -1

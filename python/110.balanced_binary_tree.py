@@ -58,6 +58,26 @@ class Solution:
             return False, 0
             
         return abs(leftHeight - rightHeight) <= 1, max(leftHeight, rightHeight) + 1
+    
+
+# https://www.youtube.com/watch?v=QfJsau0ItOY&t=5s
+# bottom up strategy: the video's solution is not good as the following
+class Solution(object):
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if not root:
+            return True
+        if abs(self.level(root.left) - self.level(root.right)) <= 1:
+            return self.isBalanced(root.left) and self.isBalanced(root.right)
+        else:
+            return False
+
+    def level(self, node):
+        if not node: return 0
+        return max(self.level(node.left), self.level(node.right)) + 1
 
 
 

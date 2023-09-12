@@ -37,6 +37,37 @@ class Solution(object):
                 temp.left = root.left
                 root = root.right
         return root
+    
+
+
+
+# https://www.youtube.com/watch?v=LFzAoJJt92M 
+
+class Solution(object):
+    def deleteNode(self, root, key):
+        """
+        :type root: TreeNode
+        :type key: int
+        :rtype: TreeNode
+        """
+        if not root: return root        
+        # find the key node to delete
+        if key > root.val:
+            root.right = self.deleteNode(root.right, key) # deleteNode might delete the root.right node so we need to store it
+        elif key < root.val:
+            root.left = self.deleteNode(root.left, key)
+        else:
+            if not root.left:
+                return root.right
+            elif not root.right:
+                return root.left
+            # when the deleted node has two children, find the minimu from the right subtree
+            curr = root.right
+            while curr.left:
+                curr = curr.left
+            root.val = curr.val
+            root.right = self.deleteNode(root.right, root.val)
+        return root
         
     
 
