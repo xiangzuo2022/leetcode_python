@@ -60,11 +60,11 @@
 
 
 # Graph -- DFS
-1. 743 stop
+1. 743 
 2. 787
 3. 264 (no needcode)
 4. 373 (no needcode)
-5. 778 
+5. 778 stop
 6. 378 (no needcode)
 7. 200
 8. 332
