@@ -149,6 +149,27 @@ public:
 https://www.youtube.com/watch?v=yE4qcjabHqY&t=450s
 
 
+# https://www.youtube.com/watch?v=mQeF6bN8hMk
+# DFS + Hashmap
+class Solution(object):
+    def cloneGraph(self, node):
+        """
+        :type node: Node
+        :rtype: Node
+        """
+        oldToNew = {}
+        
+        def clone(node):
+            if node in oldToNew:
+                return oldToNew[node]
+            copy = Node(node.val)
+            oldToNew[node] = copy
+            for nei in node.neighbors:
+                copy.neighbors.append(clone(nei))
+            return copy
+        return clone(node) if node else None
+
+
 
 
 

@@ -67,10 +67,10 @@
 5. 778 done
 6. 378 (no needcode)
 7. 200 done
-8. 332 stop
-9. 133
-10. 399
-11. 785
+8. 332 done
+9. 133 done
+10. 399 done
+11. 785 stop
 12. 841 (no needcode)
 
 
