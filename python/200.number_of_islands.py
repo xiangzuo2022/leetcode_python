@@ -66,3 +66,37 @@ class Solution:
 链接：https://leetcode-cn.com/problems/number-of-islands/solution/dao-yu-shu-liang-by-leetcode/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+# https://www.youtube.com/watch?v=pV2kpPD66nE
+# BFS + visit
+class Solution(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        if not grid: return 0
+        island = 0
+        direct = [[0, 1],[1, 0],[0, -1],[-1, 0]]        
+        visit = set()
+        rows, cols = len(grid), len(grid[0])
+
+        def bfs(r, c):
+            q = collections.deque()
+            visit.add((r, c))
+            q.append((r, c))
+            while q:
+                row, col = q.popleft()
+                for dr, dc in direct:
+                    r, c = row + dr, col + dc
+                    if (r in range(rows) and c in range(cols) and (r,c) not in visit and grid[r][c] == '1'):
+                        q.append((r, c))
+                        visit.add((r, c))
+
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c] == '1' and (r, c) not in visit:
+                    bfs(r,c)
+                    island += 1
+        return island
