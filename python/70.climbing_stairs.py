@@ -78,6 +78,21 @@ class Solution(object):
         for i in range(2, n):
             steps[i] = steps[i-1] + steps[i-2]
         return steps[n-1]
+    
+
+# https://www.youtube.com/watch?v=Y0lT9Fck7qI
+# O(n) DP caching memorization
+# DP without O(n) memory space
+
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        one, two = 1, 1
+        for i in range(n-1):
+            temp = one
+            one = one + two
+            two = temp
+        return one
+
 
 
 

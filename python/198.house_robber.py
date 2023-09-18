@@ -98,6 +98,9 @@ class Solution(object):
         for i in range(2, n):
             dp[i] = max(dp[i-1], dp[i-2] + nums[i])
         return dp[-1]
+    
+# https://www.youtube.com/watch?v=_i4Yxeh5ceQ&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=47
+
 
 
 

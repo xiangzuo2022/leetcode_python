@@ -68,3 +68,25 @@ class Solution:
                     result += 1
                     dp[i][j] = True
         return result
+    
+
+# https://www.youtube.com/watch?v=_i4Yxeh5ceQ&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=47
+class Solution:
+    def countSubstrings(self, s: str) -> int:
+        n = len(s)
+        if n < 2: return 1
+        ans = 0
+
+        def helper(l, r):
+            counter = 0
+            while l >=0 and r < n and s[l] == s[r]:
+                l -= 1
+                r += 1
+                counter += 1
+            return counter
+
+        for i in range(n):
+            l1 = helper(i, i)
+            l2 = helper(i, i+1)
+            ans += l1 + l2
+        return ans

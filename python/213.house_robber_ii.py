@@ -75,6 +75,24 @@ class Solution:
             else:
                 even = max(even+nums[i],odd)
         return max(odd,even)
+    
+
+# https://www.youtube.com/watch?v=_i4Yxeh5ceQ&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=47
+# run dp twice, one with the firt house and one with the last house. Get the max one of these two
+class Solution:
+    def rob(self, nums: List[int]) -> int:        
+
+        def helper(nums):
+            rob1, rob2 = 0, 0 
+            for n in nums:
+                newRob = max(rob1 + n, rob2)
+                rob1 = rob2
+                rob2 = newRob
+            return rob2
+
+        if len(nums) == 1:
+            return nums[0]
+        return max(helper(nums[1:]), helper(nums[:-1]))
 
 
 

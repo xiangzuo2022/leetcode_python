@@ -93,5 +93,31 @@ class Solution(object):
                         max_len = curr_len
                         start = i
         return s[start:start+max_len]
+    
+
+# https://www.youtube.com/watch?v=_i4Yxeh5ceQ&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO&index=47
+# DP 中心扩散法
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        res = ""
+        resLen = 0
+
+        def helper(l, r):
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                l -= 1
+                r += 1
+            return s[l+1:r]
+
+        for i in range(len(s)):
+            # aba case
+            temp = helper(i, i)
+            if len(temp) > len(res):
+                res = temp
+            # abba case
+            temp = helper(i, i+1)
+            if len(temp) > len(res):
+                res = temp
+        return res
+
 
 

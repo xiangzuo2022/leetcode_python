@@ -32,7 +32,23 @@ class Solution:
             for k in range(i):
                 if dp[k] and s[k:i] in wordDict:
                     dp[i] = True
-        return dp[len(s)]       
+        return dp[len(s)]   
+
+# https://www.youtube.com/watch?v=Sx9NNgInc3A&t=10s
+# dp buttom up solution
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        dp = [False] * (len(s) + 1)
+        dp[len(s)] = True
+
+        # buttom up
+        for i in range(len(s) -1, -1, -1):
+            for w in wordDict:
+                if (i + len(w)) <=len(s) and s[i:i+len(w)] == w:
+                    dp[i] = dp[i+len(w)]
+                if dp[i]:
+                    break
+        return dp[0]    
 
 
 
