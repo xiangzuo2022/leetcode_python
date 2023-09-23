@@ -72,3 +72,18 @@ class Solution(object):
             minValue = min(minValue, prices[i])            
             maxProfit = max(prices[i] - minValue, maxProfit)          
         return maxProfit
+    
+# https://www.youtube.com/watch?v=1pkOgXD63yU&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&index=2
+# two pointers
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r = 0, 1
+        maxP = 0
+
+        while r < len(prices):
+            if prices[l] < prices[r]:
+                maxP = max(maxP, prices[r] - prices[l])
+            else:
+                l = r
+            r += 1
+        return maxP

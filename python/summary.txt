@@ -116,19 +116,19 @@
 
 
 Good Questions:
-1. 528
+1. 528  done
 
 
 
 BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions）
 *************************** Array *********************
-1. Two Sum
-121. Best Time to Buy and Sell Stock
-217. Contains Duplicate
-238. Product of Array Except Self
-53. Maximum Subarray
-152. Maximum Product Subarray
-153. Find Minimum in Rotated Sorted Array
+1. Two Sum done(hashmap)
+121. Best Time to Buy and Sell Stock done(two pointers)
+217. Contains Duplicate done (hashset)
+238. Product of Array Except Self done (prefix * postfix)
+53. Maximum Subarray done (prefixSum)
+152. Maximum Product Subarray done(trace curMax and curMin)
+153. Find Minimum in Rotated Sorted Array done (binary search)
 33. Search in Rotated Sorted Array
 15. 3 Sum
 11. Container With Most Water

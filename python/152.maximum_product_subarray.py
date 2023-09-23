@@ -108,7 +108,19 @@ good analysis
 """
 https://leetcode-cn.com/problems/maximum-product-subarray/solution/si-wei-dao-tu-zheng-li-zui-da-zi-xu-ji-h-r8du/
 
+# https://www.youtube.com/watch?v=lXVy6YWFcRM&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&index=6
+# O(n)
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        res = max(nums)
+        curMin, curMax = 1, 1
 
+        for n in nums:            
+            tmp = curMax * n
+            curMax = max(curMax * n, curMin * n, n)
+            curMin = min(tmp, curMin * n, n)           
+            res = max(res, curMax)
+        return res
 
 
 

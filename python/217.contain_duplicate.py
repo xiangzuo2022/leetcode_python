@@ -82,3 +82,16 @@ class Solution(object):
 if __name__ == '__main__':
 	a = Solution()
 	print a.containsDuplicate([3,3])
+
+# https://www.youtube.com/watch?v=3OamzN90kPg&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&index=3
+# multiple solutions
+# sorting, hashset, hashmap
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
