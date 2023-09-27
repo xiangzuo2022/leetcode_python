@@ -96,6 +96,31 @@ class Solution:
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+# https://www.youtube.com/watch?v=U8XENwh8Oy8&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&index=8
+# binary search
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        res = 0
+        l, r = 0, len(nums) - 1
+
+        while l <= r:
+            m = l + (r - l) // 2
+            if nums[m] == target:
+                return m
+            # left sorted portion
+            if nums[m] >= nums[l]:
+                if target > nums[m] or target < nums[l]:
+                    l = m + 1
+                else:
+                    r = m - 1          
+            else: # right sorted portion
+                if target < nums[m] or target > nums[r]:
+                    r = m - 1
+                else:
+                    l = m + 1
+        return -1
+        
+
 
 
 

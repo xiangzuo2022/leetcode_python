@@ -116,7 +116,8 @@
 
 
 Good Questions:
-1. 528  done
+1. 528  done 
+2. 72 (tiktok) done
 
 
 
@@ -129,12 +130,12 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 53. Maximum Subarray done (prefixSum)
 152. Maximum Product Subarray done(trace curMax and curMin)
 153. Find Minimum in Rotated Sorted Array done (binary search)
-33. Search in Rotated Sorted Array
-15. 3 Sum
-11. Container With Most Water
+33. Search in Rotated Sorted Array done (binary search)
+15. 3 Sum done (remove duplicates)
+11. Container With Most Water done (two pointers)
 
 *************************** Binary *********************
-Sum of Two Integers
+371. Sum of Two Integers (xor, &, carry)
 Number of 1 Bits
 Counting Bits
 Missing Number
