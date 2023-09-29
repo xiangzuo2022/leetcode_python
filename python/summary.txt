@@ -89,6 +89,7 @@
 17. 213 done
 18. 5 done 
 19. 647 done
+20. 509 done
 
 
 # DP -- 2D
@@ -135,11 +136,11 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 11. Container With Most Water done (two pointers)
 
 *************************** Binary *********************
-371. Sum of Two Integers (xor, &, carry)
-Number of 1 Bits
-Counting Bits
-Missing Number
-Reverse Bits
+371. Sum of Two Integers done (xor, &, carry)
+191. Number of 1 Bits done
+338. Counting Bits done (dp)
+268. Missing Number
+190. Reverse Bits
 
 *************************** Dynamic Programming *********************
 Climbing Stairs
