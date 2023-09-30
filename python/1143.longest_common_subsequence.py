@@ -28,3 +28,20 @@ class Solution(object):
                 else:
                     dp[i][j] = max(dp[i-1][j], dp[i][j-1])
         return dp[-1][-1]
+    
+# https://www.youtube.com/watch?v=Ua0GhsJSlWM&t=9s
+# bottom up 2d DP
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        n1 = len(text1) + 1
+        n2 = len(text2) + 1
+
+        dp = [[0 for j in range(n2)] for i in range(n1)]
+
+        for i in range(n1 - 2, -1, -1):
+            for j in range(n2 - 2, -1, -1):
+                if text1[i] == text2[j]:
+                    dp[i][j] = 1 + dp[i+1][j+1]
+                else:
+                    dp[i][j] = max(dp[i][j+1], dp[i+1][j])
+        return dp[0][0]

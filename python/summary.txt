@@ -139,18 +139,18 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 371. Sum of Two Integers done (xor, &, carry)
 191. Number of 1 Bits done
 338. Counting Bits done (dp)
-268. Missing Number
-190. Reverse Bits
+268. Missing Number done
+190. Reverse Bits done
 
 *************************** Dynamic Programming *********************
-Climbing Stairs
-Coin Change
-Longest Increasing Subsequence
-Longest Common Subsequence
-Word Break Problem
-Combination Sum
-House Robber
-House Robber II
+70. Climbing Stairs done (1d dp)
+322. Coin Change done (1d dp)
+300. Longest Increasing Subsequence done (1d dp)
+1143. Longest Common Subsequence done (2D dp)
+139. Word Break Problem
+377. Combination Sum
+198. House Robber
+213. House Robber II
 Decode Ways
 Unique Paths
 Jump Game
