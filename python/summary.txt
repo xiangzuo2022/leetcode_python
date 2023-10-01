@@ -158,19 +158,19 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 *************************** Graph *********************
 133. Clone Graph done (hashmap)
 207. Course Schedule done (DFS + adjacent list)
-417. Pacific Atlantic Water Flow
-200. Number of Islands
-Longest Consecutive Sequence
-Alien Dictionary (Leetcode Premium)
-Graph Valid Tree (Leetcode Premium)
-Number of Connected Components in an Undirected Graph (Leetcode Premium)
+417. Pacific Atlantic Water Flow done (DFS)
+200. Number of Islands done (BFS)
+128. Longest Consecutive Sequence
+269. Alien Dictionary (Leetcode Premium)
+261. Graph Valid Tree (Leetcode Premium)
+323. Number of Connected Components in an Undirected Graph (Leetcode Premium)
 
 *************************** Interval *********************
-Insert Interval
-Merge Intervals
-Non-overlapping Intervals
-Meeting Rooms (Leetcode Premium)
-Meeting Rooms II (Leetcode Premium)
+57. Insert Interval
+56. Merge Intervals
+435. Non-overlapping Intervals
+252. Meeting Rooms (Leetcode Premium)
+253. Meeting Rooms II (Leetcode Premium)
 
 *************************** Linked List *********************
 Reverse a Linked List
