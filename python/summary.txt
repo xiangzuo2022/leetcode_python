@@ -147,19 +147,19 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 322. Coin Change done (1d dp)
 300. Longest Increasing Subsequence done (1d dp)
 1143. Longest Common Subsequence done (2D dp)
-139. Word Break Problem
-377. Combination Sum
-198. House Robber
-213. House Robber II
-Decode Ways
-Unique Paths
-Jump Game
+139. Word Break Problem done
+377. Combination Sum done
+198. House Robber done 
+213. House Robber II done
+91. Decode Ways done (dp)
+62. Unique Paths done (2D dp)
+55. Jump Game done (greedy)
 
 *************************** Graph *********************
-Clone Graph
-Course Schedule
-Pacific Atlantic Water Flow
-Number of Islands
+133. Clone Graph done (hashmap)
+207. Course Schedule done (DFS + adjacent list)
+417. Pacific Atlantic Water Flow
+200. Number of Islands
 Longest Consecutive Sequence
 Alien Dictionary (Leetcode Premium)
 Graph Valid Tree (Leetcode Premium)

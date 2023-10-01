@@ -1,4 +1,4 @@
-"""
+ """
 # 此问题等价于判断有向图中是否有环。如果存在环路，无法完成拓扑排序，也就不可能修完所有的课程。
 # 表示图的方法有几种。例如，输入中的先修课程就是用一组边的方式表示图。这种图的表示方法合适吗？
 # 通过DFS实现的拓扑排序—Cousera的一段21分钟的视频教程很好的解释了拓扑排序的基本概念。拓扑排序也可以通过BFS完成。
@@ -121,6 +121,35 @@ def canFinish(self, numCourses, prerequisites):
                 if indegree[ee] == 0:
                     stack.append(ee)
         return [False,True][len(courses)==k] # =k return False
+
+# https://www.youtube.com/watch?v=EgI5nU9etnU
+# DFS + adjacent list
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        preMap = {i:[] for i in range(numCourses)}
+        # build up a graph
+        for crs, pre in prerequisites:
+            preMap[crs].append(pre)
+        # visitSet = all courses along the curr DFS path
+        visitSet = set()
+
+        def dfs(crs):
+            if crs in visitSet:
+                return False
+            if preMap[crs] == []:
+                return True
+            visitSet.add(crs)
+            for pre in preMap[crs]:
+                if not dfs(pre):
+                    return False
+            visitSet.remove(crs)
+            preMap[crs] = []
+            return True
+        # the graph could be not fully connected
+        for crs in range(numCourses):
+            if not dfs(crs):
+                return False
+        return True
 
 
 
