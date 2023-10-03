@@ -94,6 +94,24 @@ class Solution(object):
             else:
                 result.append(intervals[i])
         return result
+    
+# https://www.youtube.com/watch?v=44H3cEC2fFM
+# deal with all cases
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        
+        intervals.sort(key = lambda i: i[0])
+        res = [intervals[0]] # add the first one in the res can avoid many edge cases
+
+        for start, end in intervals[1:]:
+            lastEnd = res[-1][1]
+
+            if start <= lastEnd:
+                # [1, 5], [2, 4] = [1, 5]
+                res[-1][1] = max(lastEnd, end)
+            else:
+                res.append([start, end])
+        return res
 
 
 
