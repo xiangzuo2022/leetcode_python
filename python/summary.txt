@@ -1,3 +1,8 @@
+union Find
+topological sort 
+trie tree 
+
+
 # Heap
 1. 23 done 
 2. 347 done
@@ -160,9 +165,9 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 207. Course Schedule done (DFS + adjacent list)
 417. Pacific Atlantic Water Flow done (DFS)
 200. Number of Islands done (BFS)
-128. Longest Consecutive Sequence
-269. Alien Dictionary (Leetcode Premium)
-261. Graph Valid Tree (Leetcode Premium)
+128. Longest Consecutive Sequence done 
+269. Alien Dictionary (Leetcode Premium) done (topological sort) hard to write code
+261. Graph Valid Tree (Leetcode Premium) done (DFS + visit + prev)
 323. Number of Connected Components in an Undirected Graph (Leetcode Premium)
 
 *************************** Interval *********************
