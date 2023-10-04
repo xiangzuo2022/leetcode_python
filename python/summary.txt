@@ -166,30 +166,30 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 417. Pacific Atlantic Water Flow done (DFS)
 200. Number of Islands done (BFS)
 128. Longest Consecutive Sequence done 
-269. Alien Dictionary (Leetcode Premium) done (topological sort) hard to write code
-261. Graph Valid Tree (Leetcode Premium) done (DFS + visit + prev)
-323. Number of Connected Components in an Undirected Graph (Leetcode Premium) done (union find + rank)
+269. Alien Dictionary  done (topological sort) hard to write code
+261. Graph Valid Tree done (DFS + visit + prev)
+323. Number of Connected Components in an Undirected Graph done (union find + rank)
 
 *************************** Interval *********************
 57. Insert Interval done (deal with all edge cases)
 56. Merge Intervals done(deal with all edge cases)
-435. Non-overlapping Intervals
-252. Meeting Rooms (Leetcode Premium)
-253. Meeting Rooms II (Leetcode Premium)
+435. Non-overlapping Intervals done
+252. Meeting Rooms done
+253. Meeting Rooms II done
 
 *************************** Linked List *********************
-Reverse a Linked List
-Detect Cycle in a Linked List
-Merge Two Sorted Lists
-Merge K Sorted Lists
-Remove Nth Node From End Of List
-Reorder List
+206. Reverse a Linked List done (recursive + iterative)
+141. Detect Cycle in a Linked List done(slow + fast pointers)
+21. Merge Two Sorted Lists done
+23. Merge K Sorted Lists
+19. Remove Nth Node From End Of List
+143. Reorder List
 
 *************************** Matrix *********************
-Set Matrix Zeroes
-Spiral Matrix
-Rotate Image
-Word Search
+73. Set Matrix Zeroes
+54. Spiral Matrix
+48. Rotate Image
+79. Word Search
 
 *************************** String *********************
 Longest Substring Without Repeating Characters
@@ -201,7 +201,7 @@ Valid Parentheses
 Valid Palindrome
 Longest Palindromic Substring
 Palindromic Substrings
-Encode and Decode Strings (Leetcode Premium)
+Encode and Decode Strings 
 
 *************************** Tree *********************
 Maximum Depth of Binary Tree

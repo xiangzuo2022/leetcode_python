@@ -93,7 +93,7 @@ class Solution:
         return used_rooms
     
 # https://www.youtube.com/watch?v=FdzJmTCVyJU&t=275s
-# time complexity: O(n)
+# time complexity: O(nlogn)
 class Solution(object):
     def minMeetingRooms(self, intervals):
         """
