@@ -181,27 +181,27 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 206. Reverse a Linked List done (recursive + iterative)
 141. Detect Cycle in a Linked List done(slow + fast pointers)
 21. Merge Two Sorted Lists done
-23. Merge K Sorted Lists
-19. Remove Nth Node From End Of List
-143. Reorder List
+23. Merge K Sorted Lists done (heap or merge sort)
+19. Remove Nth Node From End Of List done (slow and fast pointers)
+143. Reorder List done (slow+fast pointer, reverse a linkedlist, merge two linkedlist)
 
 *************************** Matrix *********************
-73. Set Matrix Zeroes
-54. Spiral Matrix
-48. Rotate Image
-79. Word Search
+73. Set Matrix Zeroes done (reuse the matrix to store information)
+54. Spiral Matrix done
+48. Rotate Image done (reverse + transpose)
+79. Word Search done (brute force + backtracking)
 
 *************************** String *********************
-Longest Substring Without Repeating Characters
-Longest Repeating Character Replacement
-Minimum Window Substring
-Valid Anagram
-Group Anagrams
-Valid Parentheses
-Valid Palindrome
-Longest Palindromic Substring
-Palindromic Substrings
-Encode and Decode Strings 
+3. Longest Substring Without Repeating Characters done (sliding window)
+424. Longest Repeating Character Replacement done (sliding window)
+76. Minimum Window Substring
+242. Valid Anagram
+49. Group Anagrams
+20. Valid Parentheses
+125. Valid Palindrome
+5. Longest Palindromic Substring
+647. Palindromic Substrings
+271. Encode and Decode Strings 
 
 *************************** Tree *********************
 Maximum Depth of Binary Tree
@@ -220,7 +220,7 @@ Add and Search Word
 Word Search II
 
 *************************** Heap *********************
-Merge K Sorted Lists
+23. Merge K Sorted Lists done
 Top K Frequent Elements
 Find Median from Data Stream
 

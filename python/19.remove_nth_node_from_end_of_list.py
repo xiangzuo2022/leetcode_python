@@ -97,6 +97,30 @@ class Solution:
         slow.next = slow.next.next #删除
         return head_dummy.next
 
+# https://www.youtube.com/watch?v=XVuQxVej6y8
+# the dummy node is used to solve the issue stop at before the delete node  
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: ListNode
+        :type n: int
+        :rtype: ListNode
+        """
+        dummy = ListNode(0, head)
+        left, right  = dummy, head
+
+        while n > 0 and right:
+            right = right.next
+            n -= 1
+        
+        while right:
+            left = left.next
+            right = right.next
+        # delete
+        left.next = left.next.next
+        return dummy.next
+
+
 
 
 
