@@ -90,3 +90,27 @@ class Solution:
             l2 = helper(i, i+1)
             ans += l1 + l2
         return ans
+    
+
+# https://www.youtube.com/watch?v=4RACzI5-du8&t=11s
+class Solution(object):
+    def countSubstrings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        ans = 0
+        
+        def helper(l, r):
+            counter = 0
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                counter += 1
+                l -= 1
+                r += 1
+            return counter
+
+        for i in range(len(s)):
+            l1 = helper(i, i)
+            l2 = helper(i, i+1)
+            ans += l1 + l2
+        return ans

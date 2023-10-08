@@ -194,21 +194,21 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 *************************** String *********************
 3. Longest Substring Without Repeating Characters done (sliding window)
 424. Longest Repeating Character Replacement done (sliding window)
-76. Minimum Window Substring
-242. Valid Anagram
-49. Group Anagrams
-20. Valid Parentheses
-125. Valid Palindrome
-5. Longest Palindromic Substring
-647. Palindromic Substrings
-271. Encode and Decode Strings 
+76. Minimum Window Substring done (sliding window + multiple hashMaps) code is not easy to write
+242. Valid Anagram done (hashmap or sorting)
+49. Group Anagrams done (defaultdict + 26 characters)
+20. Valid Parentheses done (stack and hashmap)
+125. Valid Palindrome done 
+5. Longest Palindromic Substring done
+647. Palindromic Substrings done 
+271. Encode and Decode Strings done (code is not easy to write)
 
 *************************** Tree *********************
-Maximum Depth of Binary Tree
-Same Tree
-Invert/Flip Binary Tree
-Binary Tree Maximum Path Sum
-Binary Tree Level Order Traversal
+104. Maximum Depth of Binary Tree done (DFS + recursive)
+100. Same Tree
+226. Invert/Flip Binary Tree
+124. Binary Tree Maximum Path Sum
+102. Binary Tree Level Order Traversal
 Serialize and Deserialize Binary Tree
 Subtree of Another Tree
 Construct Binary Tree from Preorder and Inorder Traversal
