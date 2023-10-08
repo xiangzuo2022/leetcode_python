@@ -205,9 +205,9 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 
 *************************** Tree *********************
 104. Maximum Depth of Binary Tree done (DFS + recursive)
-100. Same Tree
-226. Invert/Flip Binary Tree
-124. Binary Tree Maximum Path Sum
+100. Same Tree done
+226. Invert/Flip Binary Tree done (revursion)
+124. Binary Tree Maximum Path Sum done
 102. Binary Tree Level Order Traversal
 Serialize and Deserialize Binary Tree
 Subtree of Another Tree

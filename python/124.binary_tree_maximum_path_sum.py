@@ -58,7 +58,28 @@ class Solution(object):
         return max(left,right) + root.val
     
 # https://www.youtube.com/watch?v=Hr5cWUld4vU
+class Solution(object):
+    def maxPathSum(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        self.maxSum = -sys.maxint
 
+        # return max path sum without split
+        def dfs(node):
+            if not node:
+                return 0
+            left = max(0, dfs(node.left))
+            right = max(0, dfs(node.right))
+            # maxSum with split
+            self.maxSum = max(self.maxSum, left + right + node.val)
+            # maxSum without split
+            return max(left, right) + node.val
+        
+        dfs(root)
+        return self.maxSum
+        
 
 
 
