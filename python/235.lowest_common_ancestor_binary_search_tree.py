@@ -22,3 +22,22 @@ class Solution(object):
         elif root.val < p.val and root.val < q.val:
             return self.lowestCommonAncestor(root.right,p,q)  
         else: return root
+
+# https://www.youtube.com/watch?v=gs2LMfuOR9k&t=7s
+# iterative
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        cur = root
+        while cur:
+            if cur.val < p.val and cur.val < q.val:
+                cur = cur.right
+            elif cur.val > p.val and cur.val > q.val:
+                cur = cur.left
+            else:
+                return cur

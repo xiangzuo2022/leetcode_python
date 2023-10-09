@@ -79,7 +79,22 @@ class Solution(object):
         root.right = self.buildTree(preorder[mid+1:], inorder[mid+1:])
         
         return root
-
+    
+# https://www.youtube.com/watch?v=ihj4IQGZ2zc&t=19s
+class Solution(object):
+    def buildTree(self, preorder, inorder):
+        """
+        :type preorder: List[int]
+        :type inorder: List[int]
+        :rtype: TreeNode
+        """
+        if not preorder or not inorder:
+            return None
+        root = TreeNode(preorder[0])
+        mid = inorder.index(preorder[0])   
+        root.left = self.buildTree(preorder[1:mid+1], inorder[:mid])   
+        root.right = self.buildTree(preorder[mid+1:], inorder[mid+1:])  
+        return root  
 
 
 
