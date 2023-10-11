@@ -469,14 +469,14 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 238. * Product of Array Except Self ok (prefix * postfix, not easy to write code)
 53. Maximum Subarray ok (prefixSum or divide and conquer??)
 152. * Maximum Product Subarray ok(trace curMax and curMin)
-153. Find Minimum in Rotated Sorted Array done (binary search)
-33. Search in Rotated Sorted Array done (binary search)
-15. 3 Sum done (remove duplicates)
-11. Container With Most Water done (two pointers)
+153. Find Minimum in Rotated Sorted Array ok (binary search)
+33. * Search in Rotated Sorted Array ok (binary search)
+15. * 3 Sum ok (remove duplicates by sorting + two pointers)
+11. Container With Most Water ok (two pointers)
 
 *************************** Binary *********************
-371. Sum of Two Integers done (xor, &, carry)
-191. Number of 1 Bits done
+371. * Sum of Two Integers ok (xor, &, carry) 背
+191. * Number of 1 Bit ok (>> 1)背
 338. Counting Bits done (dp)
 268. Missing Number done
 190. Reverse Bits done
@@ -495,8 +495,8 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 55. Jump Game done (greedy)
 
 *************************** Graph *********************
-133. Clone Graph done (hashmap)
-207. Course Schedule done (DFS + adjacent list)
+133. Clone Graph ok (hashmap)
+207. * Course Schedule ok (DFS + adjacent list)
 417. Pacific Atlantic Water Flow done (DFS)
 200. Number of Islands done (BFS)
 128. Longest Consecutive Sequence done 

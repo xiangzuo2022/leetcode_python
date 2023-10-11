@@ -110,6 +110,7 @@ class Solution:
                 else:
                     res.append([a, nums[l], nums[r]])
                     l += 1
-                    while nums[l] == nums[l-1] and l < r:
+                    while nums[l] == nums[l-1] and l < r: # handle the case [0,0,0,0]
                         l += 1
+             
         return res

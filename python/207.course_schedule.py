@@ -136,13 +136,13 @@ class Solution:
         def dfs(crs):
             if crs in visitSet:
                 return False
-            if preMap[crs] == []:
+            if preMap[crs] == []: # adding this line can return early to save execution time (this is triming)
                 return True
             visitSet.add(crs)
             for pre in preMap[crs]:
                 if not dfs(pre):
                     return False
-            visitSet.remove(crs)
+            visitSet.remove(crs) # for circle
             preMap[crs] = []
             return True
         # the graph could be not fully connected
