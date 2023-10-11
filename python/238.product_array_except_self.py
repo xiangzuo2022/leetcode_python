@@ -104,5 +104,7 @@ class Solution:
         for i in range(len(nums) - 1, -1, -1):
             res[i] *= postfix
             postfix *= nums[i]
-        return res   
+        return res  
+# a good video to explain the reason why
+# https://www.youtube.com/watch?v=5bS636lE_R0&t=241s 
         

@@ -192,7 +192,7 @@ class Solution(object):
 
         for n in nums:
             if currSum < 0:
-                currSum = 0
+                currSum = 0 # clear and will begin a new one
             currSum += n
             maxSum = max(maxSum, currSum)
         return maxSum          
