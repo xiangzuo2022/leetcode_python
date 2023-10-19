@@ -59,6 +59,7 @@ class Solution:
 
 """
 DP 解法 official solution
+like this solution
 """
 class Solution:
     def numDecodings(self, s: str) -> int:

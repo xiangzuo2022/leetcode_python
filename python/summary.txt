@@ -477,27 +477,27 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 *************************** Binary *********************
 371. * Sum of Two Integers ok (xor, &, carry) 背
 191. * Number of 1 Bit ok (>> 1)背
-338. Counting Bits done (dp)
-268. Missing Number done
-190. Reverse Bits done
+338. * Counting Bits ok (dp)背
+268. Missing Number ok
+190. * Reverse Bits done 背
 
 *************************** Dynamic Programming *********************
-70. Climbing Stairs done (1d dp)
-322. Coin Change done (1d dp)
-300. Longest Increasing Subsequence done (1d dp)
-1143. Longest Common Subsequence done (2D dp)
-139. Word Break Problem done
-377. Combination Sum done
-198. House Robber done 
-213. House Robber II done
-91. Decode Ways done (dp)
-62. Unique Paths done (2D dp)
-55. Jump Game done (greedy)
+70. Climbing Stairs ok (1d dp)
+322. * Coin Change ok (1d dp)
+300. * Longest Increasing Subsequence ok (1d dp)
+1143. * Longest Common Subsequence ok (2D dp)
+139. * Word Break Problem ok
+377. * Combination Sum ok
+198. House Robber ok 
+213. * House Robber II ok
+91. * Decode Ways ok (dp, the condition for dp is not easy to write)
+62. * Unique Paths ok (2D dp, initialization)
+55. * Jump Game ok (greedy)
 
 *************************** Graph *********************
 133. Clone Graph ok (hashmap)
 207. * Course Schedule ok (DFS + adjacent list)
-417. Pacific Atlantic Water Flow done (DFS)
+417. * Pacific Atlantic Water Flow ok (DFS)
 200. Number of Islands done (BFS)
 128. Longest Consecutive Sequence done 
 269. Alien Dictionary  done (topological sort) hard to write code
@@ -559,7 +559,19 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 295. Find Median from Data Stream done (two heaps)
 
 
+# Given a random number generator rand7 (outputs 0-6), create a rand10 method using rand7 (0-9 with equal probability)
 
+import random
+
+def rand7():
+    return random.randint(0, 6)
+    
+def rand10():
+    d = {}
+    while(true):
+        a = rand7()
+        d[a]
+    
 
 
 

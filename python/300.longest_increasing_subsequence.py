@@ -101,7 +101,7 @@ class Solution(object):
 
 
 #https://www.youtube.com/watch?v=cjWnW0hdF1Y&t=358s
-
+# O(n2)
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         dp = [1] * len(nums)

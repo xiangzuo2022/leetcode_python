@@ -51,7 +51,8 @@ class Solution:
     
 
 # https://www.youtube.com/watch?v=H9bfqozjoqs&t=14s
-# DP
+# DP: O(amount * len(coins)), O(amount) for memory
+# greedy does not work: [1, 3, 4, 5], target 7
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         dp = [amount + 1] * (amount + 1)
