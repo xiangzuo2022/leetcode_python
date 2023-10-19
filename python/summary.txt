@@ -498,10 +498,10 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 133. Clone Graph ok (hashmap)
 207. * Course Schedule ok (DFS + adjacent list)
 417. * Pacific Atlantic Water Flow ok (DFS)
-200. Number of Islands done (BFS)
-128. Longest Consecutive Sequence done 
-269. Alien Dictionary  done (topological sort) hard to write code
-261. Graph Valid Tree done (DFS + visit + prev)
+200. * Number of Islands ok (BFS)
+128. * Longest Consecutive Sequence ok (array + set) 
+269. ** Alien Dictionary  ok (topological sort) hard to write code
+261. * Graph Valid Tree ok (DFS + visit + prev)
 323. Number of Connected Components in an Undirected Graph done (union find + rank)
 
 *************************** Interval *********************

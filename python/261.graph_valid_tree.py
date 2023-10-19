@@ -1,6 +1,7 @@
 # https://www.youtube.com/watch?v=bXsUuownnoQ
 # DFS + visit + prev
 # two conditions to detect no loop in a graph: n == len(visit) and DFS return True
+# no loop and all nodes are connected
 class Solution:
     def validTree(self, n: int, edges: List[List[int]]) -> bool:
         if not n: return True
@@ -16,7 +17,7 @@ class Solution:
                 return False
             visit.add(i)
             for j in adj[i]:
-                if j == prev:
+                if j == prev: # if no prev, it is easy to incorrectly detect a graph with loop. because j's neighbors include the prev
                     continue
                 if not dfs(j, i):
                     return False
