@@ -28,5 +28,5 @@ class Solution:
                 prevEnd = end
             else:
                 res += 1
-                prevEnd = min(end, prevEnd)
+                prevEnd = min(end, prevEnd) # remove the one with larger span
         return res

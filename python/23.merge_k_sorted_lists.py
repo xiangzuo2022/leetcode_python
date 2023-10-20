@@ -107,6 +107,32 @@ class Solution(object):
             if a[1].next:
                 heapq.heappush(heap, (a[1].next.val, a[1].next))
         return head.next
+    
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[ListNode]
+        :rtype: ListNode
+        """
+        heap = []
+        for node in lists:
+            if node:
+                heapq.heappush(heap, (node.val, node))
+        dummy = ListNode()
+        p = dummy
+        while heap:
+            a = heapq.heappop(heap)
+            p.next = ListNode(a[0])
+            p = p.next
+            if a[1].next:
+                heapq.heappush(heap, (a[1].next.val, a[1].next))
+        return dummy.next
 
 
 

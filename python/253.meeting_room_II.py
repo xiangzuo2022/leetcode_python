@@ -113,6 +113,6 @@ class Solution(object):
             else:
                 e += 1
                 count -= 1
-            res = max(res, count)
+            res = max(res, count) # the final value should be the maximum of res because count is the local value for each run
         return res
 
