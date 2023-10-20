@@ -5,10 +5,10 @@ class Solution:
         parent = [i for i in range(n)]
         rank = [1] * n
 
-        def find(n1):
+        def find(n1): # find parent
             res = n1
             while res != parent[res]:
-                parent[res] = parent[parent[res]]
+                parent[res] = parent[parent[res]] # assign to the gradparent
                 res = parent[res]
             return res
         
