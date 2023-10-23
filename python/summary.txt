@@ -528,28 +528,28 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 *************************** String *********************
 3. * Longest Substring Without Repeating Characters ok (sliding window)
 424. * Longest Repeating Character Replacement ok (sliding window) not easy to write the code
-76. Minimum Window Substring done (sliding window + multiple hashMaps) code is not easy to write
-242. Valid Anagram done (hashmap or sorting)
-49. Group Anagrams done (defaultdict + 26 characters)
-20. Valid Parentheses done (stack and hashmap)
-125. Valid Palindrome done 
-5. Longest Palindromic Substring done
-647. Palindromic Substrings done 
-271. Encode and Decode Strings done (code is not easy to write)
-
+76. * Minimum Window Substring ok (sliding window + multiple hashMaps) code is not easy to write
+242. Valid Anagram ok (hashmap or sorting)
+49. * Group Anagrams ok (defaultdict + 26 characters) code is not easy to write
+20. * Valid Parentheses ok (stack and hashmap)
+125. * Valid Palindrome ok 
+5. * Longest Palindromic Substring ok (中心扩散法)
+647. Palindromic Substrings ok (中心扩散法 + counter)
+271. * Encode and Decode Strings ok (len(word) + "#" to encode.  code is not easy to write)
+  
 *************************** Tree *********************
-104. Maximum Depth of Binary Tree done (DFS + recursive)
-100. Same Tree done
-226. Invert/Flip Binary Tree done (revursion)
-124. Binary Tree Maximum Path Sum done
-102. Binary Tree Level Order Traversal done (BFS)
-297. Serialize and Deserialize Binary Tree done (preorder)
-572. Subtree of Another Tree done (uses the same tree code in 100)
-105. Construct Binary Tree from Preorder and Inorder Traversal done (recursion)
-98. Validate Binary Search Tree done (be careful about the boundary)
-230. Kth Smallest Element in a BST done
-235. Lowest Common Ancestor of BST done
-208. Implement Trie done (Prefix Tree)
+104. * Maximum Depth of Binary Tree ok (DFS + recursive) a couple of different solutions
+100. Same Tree ok (recursion)
+226. * Invert/Flip Binary Tree ok (revursion)
+124. * Binary Tree Maximum Path Sum ok (dfs) understand when should be a split and when should not
+102. Binary Tree Level Order Traversal ok (BFS)
+297. * Serialize and Deserialize Binary Tree ok (preorder + dfs)
+572. * Subtree of Another Tree ok (uses the same tree code in 100)
+105. * Construct Binary Tree from Preorder and Inorder Traversal ok (recursion)
+98.  * Validate Binary Search Tree ok (be careful about the boundary)
+230. * Kth Smallest Element in a BST ok (iterative + stack)
+235. * Lowest Common Ancestor of BST ok (iterative)
+208. * Implement Trie ok (Prefix Tree)多练习
 211. Add and Search Word done (not easy to code)
 212. Word Search II done (trie Tree and code is not easy to write)
 

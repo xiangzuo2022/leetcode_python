@@ -65,7 +65,7 @@ class Solution(object):
         :rtype: int
         """
         self.maxSum = -sys.maxint
-
+ 
         # return max path sum without split
         def dfs(node):
             if not node:

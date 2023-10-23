@@ -25,6 +25,7 @@ class Solution(object):
 
 # https://www.youtube.com/watch?v=gs2LMfuOR9k&t=7s
 # iterative
+# O(logn), memory O(1)
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
         """
