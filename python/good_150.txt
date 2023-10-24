@@ -1,5 +1,5 @@
 # Arrays and Hashing
-217
+217 Contains Duplicate (hashset)
 242
 1
 49

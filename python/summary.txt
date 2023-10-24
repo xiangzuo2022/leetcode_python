@@ -520,8 +520,8 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 143. * Reorder List ok (slow+fast pointer, reverse a linkedlist, merge two linkedlist)
 
 *************************** Matrix *********************
-73. Set Matrix Zeroes done (reuse the matrix to store information)
-54. Spiral Matrix done
+73. * Set Matrix Zeroes ok (reuse the matrix to store information)
+54. * Spiral Matrix ok 
 48. Rotate Image done (reverse + transpose)
 79. Word Search done (brute force + backtracking)
 
@@ -550,13 +550,13 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 230. * Kth Smallest Element in a BST ok (iterative + stack)
 235. * Lowest Common Ancestor of BST ok (iterative)
 208. * Implement Trie ok (Prefix Tree)多练习
-211. Add and Search Word done (not easy to code)
-212. Word Search II done (trie Tree and code is not easy to write)
+211. * Add and Search Word ok (trie tree + dfs not easy to code)
+212. * Word Search II ok (trie Tree and code is not easy to write)
 
 *************************** Heap *********************
-23. Merge K Sorted Lists done
-347. Top K Frequent Elements done (bucket sort or maxheap)
-295. Find Median from Data Stream done (two heaps)
+23. Merge K Sorted Lists ok
+347. Top K Frequent Elements ok (bucket sort or maxheap)
+295. * Find Median from Data Stream done (two heaps)
 
 
 # Given a random number generator rand7 (outputs 0-6), create a rand10 method using rand7 (0-9 with equal probability)
