@@ -1,139 +1,155 @@
 # Arrays and Hashing
-217 Contains Duplicate (hashset)
-242
-1
-49
-347
-238
-36
-271
-128
+217 Contains Duplicate ok (hashset)
+242 Valid Anagram ok (hashmap or sorting)
+1 Two Sum ok(hashmap: hash the diff as the key and return the diff)
+49 * Group Anagrams ok (defaultdict + 26 characters) code is not easy to write
+347  Top K Frequent Elements ok (bucket sort or maxheap)
+238 Product of Array Except Self done (prefix * postfix)
+36  Valid Sudoku
+271 Encode and Decode Strings done (code is not easy to write)
+128 Longest Consecutive Sequence done
 
 # two pointers
-125
-167
-15
-11
-42
+125 Valid Palindrome done
+167 Two Sum II - Input Array Is Sorted
+15 * 3 Sum ok (remove duplicates by sorting + two pointers)
+11 Container With Most Water ok (two pointers)
+42 Trapping Rain Water
 
 # sliding window
-121
-3
-424
-567
-76
-239
+121 Best Time to Buy and Sell Stock done(two pointers)
+3 Longest Substring Without Repeating Characters
+424 Longest Repeating Character Replacement done (sliding window)
+567  Permutation in String
+76  * Minimum Window Substring ok (sliding window + multiple hashMaps) code is not easy to write
+239 Sliding Window Maximum
 
 # stack
-20
-155
-150
-22
-739
-853
-84
+20 * Valid Parentheses ok (stack and hashmap)
+155 Min Stack
+150 Evaluate Reverse Polish Notation
+22 Generate Parentheses
+739 Daily Temperatures
+853 Car Fleet
+84 Largest Rectangle in Histogram
+
 
 # Binary Search
-704
-74
-875
-153
-33
-981
-4
+704 Binary Search
+74 Search a 2D Matrix
+875 Koko Eating Bananas
+153 Find Minimum in Rotated Sorted Array ok (binary search)
+33 * Search in Rotated Sorted Array ok (binary search)
+981 Time Based Key-Value Store
+4 Median of Two Sorted Arrays
+
 
 # Linked List
-206
-21
-143
-19
-138
-2
-141
-287
-146
-23
-25
+206 * Reverse a Linked List ok (recursive + iterative) 背
+21  Merge Two Sorted Lists ok
+143  Reorder List ok (slow+fast pointer, reverse a linkedlist, merge two linkedlist)
+19  * Remove Nth Node From End Of List ok (slow and fast pointers)
+138 Copy List with Random Pointer
+2 Add Two Numbers
+141 Detect Cycle in a Linked List ok(slow + fast pointers)
+287 Find the Duplicate Number
+146 LRU Cache
+23 Merge K Sorted Lists ok
+25 Reverse Nodes in k-Group
+
 
 # Trees
-226
-104
-543
-110
-100
-572
-235
-102
-199
-1448
-98
-230
-124
-297
+226  * Invert/Flip Binary Tree ok (revursion)
+104 * Maximum Depth of Binary Tree ok (DFS + recursive) a couple of different solutions
+543  Diameter of Binary Tree
+110 Balanced Binary Tree
+100 Same Tree ok (recursion)
+572 * Subtree of Another Tree ok (uses the same tree code in 100)
+235 * Lowest Common Ancestor of BST ok (iterative)
+102 Binary Tree Level Order Traversal ok (BFS)
+199 Binary Tree Right Side View
+1448  Count Good Nodes in Binary Tree
+98  * Validate Binary Search Tree ok (be careful about the boundary)
+230 * Kth Smallest Element in a BST ok (iterative + stack)
+124 * Binary Tree Maximum Path Sum ok (dfs) understand when should be a split and when should not
+297 * Serialize and Deserialize Binary Tree ok (preorder + dfs)
 
 # Tries
-208
-211
-212
+208 * Implement Trie ok (Prefix Tree)多练习
+211 * Add and Search Word ok (trie tree + dfs not easy to code)
+212 * Word Search II ok (trie Tree and code is not easy to write)
 
 # Heap / priority queue
-703
-1046
-973
-215
-621
-355
-295
+703 Kth Largest Element in a Stream
+1046 Last Stone Weight
+973 K Closest Points to Origin
+215  Kth Largest Element in an Array
+621  Task Scheduler
+355  Design Twitter
+295  Find Median from Data Stream
 
 # Backtracking
-78
-39
-46
-90
-40
-131
-17
-51
+78 Subsets
+39 Combination Sum
+46 Permutations
+90 Subsets II
+40 Combination Sum II
+131 Palindrome Partitioning
+17 Letter Combinations of a Phone Number
+51 N-Queens
+79 Word Search done (brute force + backtracking)
 
 # Graph
-200
-133
-695
-417
-130
-994
-286
-207
-210
-684
-323
-261
-127
+200 * Number of Islands ok (BFS)
+133 Clone Graph ok (hashmap)
+695 Max Area of Island
+417 * Pacific Atlantic Water Flow ok (DFS)
+130 Surrounded Regions
+994 Rotting Oranges
+286 walls and gates
+207 * Course Schedule ok (DFS + adjacent list)
+210 Course Schedule II
+684 Redundant Connection
+323 * Number of Connected Components in an Undirected Graph ok (union find + rank)多写几遍
+261 * Graph Valid Tree ok (DFS + visit + prev)
+127 Word Ladder
 
 # Advanced Graph
-332
-1584
-743
-778
-269
-787
+332 Reconstruct Itinerary
+1584 Min Cost to Connect All Points
+743 Network Delay Time
+778  Swim in Rising Water
+269 ** Alien Dictionary  ok (topological sort) hard to write code
+787 Cheapest Flights Within K Stops
+
 
 # 1-D DP
-70
-746
-198
-213
-5
-647
-91
-322
-152
-139
-300
-416
+70 Climbing Stairs ok (1d dp)
+746 Min Cost Climbing Stairs
+198 House Robber ok 
+213 * House Robber II ok
+5 * Longest Palindromic Substring ok (中心扩散法)
+647 Palindromic Substrings ok (中心扩散法 + counter)
+91 * Decode Ways ok (dp, the condition for dp is not easy to write)
+322 * Coin Change ok (1d dp)
+152 * Maximum Product Subarray ok(trace curMax and curMin)
+139 * Word Break Problem ok
+300 Longest Increasing Subsequence done (1d dp)
+416 Partition Equal Subset Sum
 
 
 # 2-D DP
+62 * Unique Paths ok (2D dp, initialization)
+1143 * Longest Common Subsequence ok (2D dp)
+309. Best Time to Buy and Sell Stock with Cooldown
+518. Coin Change II
+494. Target Sum
+97. Interleaving String
+329. Longest Increasing Path in a Matrix
+115. Distinct Subsequences
+72. Edit Distance
+312. Burst Balloons
+10. Regular Expression Matching
 
 # Greedy 
 
