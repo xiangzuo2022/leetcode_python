@@ -522,8 +522,8 @@ BLIND 75 List （https://leetcode.com/discuss/general-discussion/460599/blind-75
 *************************** Matrix *********************
 73. * Set Matrix Zeroes ok (reuse the matrix to store information)
 54. * Spiral Matrix ok 
-48. Rotate Image done (reverse + transpose)
-79. Word Search done (brute force + backtracking)
+48. * Rotate Image ok (reverse + transpose)背
+79. * Word Search ok (backtracking + DFS)简单版的212
 
 *************************** String *********************
 3. * Longest Substring Without Repeating Characters ok (sliding window)
