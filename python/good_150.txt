@@ -4,44 +4,44 @@
 1 Two Sum ok(hashmap: hash the diff as the key and return the diff)
 49 * Group Anagrams ok (defaultdict + 26 characters) code is not easy to write
 347  Top K Frequent Elements ok (bucket sort or maxheap)
-238 Product of Array Except Self done (prefix * postfix)
-36  Valid Sudoku
-271 Encode and Decode Strings done (code is not easy to write)
-128 Longest Consecutive Sequence done
+238 Product of Array Except Self ok (prefix * postfix)
+36  (new) Valid Sudoku newly done (hashmap)
+271 Encode and Decode Strings ok (code is not easy to write)
+128 Longest Consecutive Sequence ok
 
 # two pointers
-125 Valid Palindrome done
-167 Two Sum II - Input Array Is Sorted
+125 Valid Palindrome ok
+167 (new) Two Sum II - Input Array Is Sorted ok (two pointers)
 15 * 3 Sum ok (remove duplicates by sorting + two pointers)
 11 Container With Most Water ok (two pointers)
-42 Trapping Rain Water
+42 (new) Trapping Rain Water ok (two pointers, leftMax, rightMax)
 
 # sliding window
-121 Best Time to Buy and Sell Stock done(two pointers)
-3 Longest Substring Without Repeating Characters
-424 Longest Repeating Character Replacement done (sliding window)
-567  Permutation in String
+121 Best Time to Buy and Sell Stock ok(two pointers)
+3 Longest Substring Without Repeating Characters ok (sliding window)
+424 Longest Repeating Character Replacement ok (sliding window)
+567 (new) Permutation in String (hashtable/array + sliding window)
 76  * Minimum Window Substring ok (sliding window + multiple hashMaps) code is not easy to write
-239 Sliding Window Maximum
+239 (new) Sliding Window Maximum
 
 # stack
 20 * Valid Parentheses ok (stack and hashmap)
-155 Min Stack
-150 Evaluate Reverse Polish Notation
-22 Generate Parentheses
-739 Daily Temperatures
-853 Car Fleet
-84 Largest Rectangle in Histogram
+155 (new)Min Stack
+150 (new)Evaluate Reverse Polish Notation
+22 (new)Generate Parentheses
+739 (new)Daily Temperatures
+853 (new)Car Fleet
+84 (new)Largest Rectangle in Histogram
 
 
 # Binary Search
-704 Binary Search
-74 Search a 2D Matrix
-875 Koko Eating Bananas
-153 Find Minimum in Rotated Sorted Array ok (binary search)
+704 (new)Binary Search
+74 (new)Search a 2D Matrix
+875 (new)Koko Eating Bananas
+153 (new)Find Minimum in Rotated Sorted Array ok (binary search)
 33 * Search in Rotated Sorted Array ok (binary search)
-981 Time Based Key-Value Store
-4 Median of Two Sorted Arrays
+981 (new)Time Based Key-Value Store
+4 (new)Median of Two Sorted Arrays
 
 
 # Linked List
