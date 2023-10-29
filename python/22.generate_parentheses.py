@@ -103,6 +103,31 @@ class Solution:
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+# https://www.youtube.com/watch?v=s9fokUqJ76A
+# Only add open paranthesis if open < n
+# only add a closing paranthesis if closed < open
+# valid IIF open == closed == n
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        stack = []
+        res = []
+
+        def backtracking(openN, closeN):
+            if openN == closeN == n:                
+                res.append("".join(stack))
+                return 
+            if openN < n:
+                stack.append("(")
+                backtracking(openN + 1, closeN)
+                stack.pop()
+            if closeN < openN:
+                stack.append(")")
+                backtracking(openN, closeN + 1)
+                stack.pop()
+            
+        backtracking(0, 0)
+        return res
+
 
 
 

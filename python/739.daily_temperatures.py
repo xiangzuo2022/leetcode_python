@@ -38,3 +38,7 @@ class Solution(object):
                 res[stackInd] = i - stackInd
             stack.append([t, i])
         return res
+    
+
+# https://www.youtube.com/watch?v=cTBiBSnjO3c&t=13s
+# monotonic decreasing stack

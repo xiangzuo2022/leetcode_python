@@ -1,0 +1,117 @@
+# Arrays & Hashing
+217. Contains Duplicate done 
+242. Valid Anagram done
+1929. (new)Concatenation of Array
+1299. (new)Replace Elements with Greatest Element on Right Side
+392. (new)Is Subsequence
+58. (new)Length of Last Word
+1. Two Sum done
+14. (new)Longest Common Prefix
+49. Group Anagrams done
+118. Pascal's Triangle
+27. Remove Element
+929. Unique Email Addresses
+205. Isomorphic Strings
+605. Can Place Flowers
+169. Majority Element
+496. Next Greater Element I
+724. Find Pivot Index
+303. Range Sum Query - Immutable
+448. Find All Numbers Disappeared in an Array
+1189. Maximum Number of Balloons
+290. Word Pattern
+705. Design HashSet
+706. Design HashMap
+912. Sort an Array
+347. Top K Frequent Elements
+238. Product of Array Except Self done
+36. Valid Sudoku done
+271. Encode and Decode Strings done
+128. Longest Consecutive Sequence
+75. Sort Colors
+535. Encode and Decode TinyURL
+554. Brick Wall
+122. Best Time to Buy and Sell Stock II
+560. Subarray Sum Equals K
+1930. Unique Length-3 Palindromic Subsequences
+1963. Minimum Number of Swaps to Make the String Balanced
+2001. Number of Pairs of Interchangeable Rectangles
+2002. Maximum Product of the Length of Two Palindromic Subsequences
+2017. Grid Game
+438. Find All Anagrams in a String
+28. Find the Index of the First Occurrence in a String
+280. Wiggle Sort
+179. Largest Number
+523. Continuous Subarray Sum
+838. Push Dominoes
+187. Repeated DNA Sequences
+380. Insert Delete GetRandom O(1)
+1461. Check If a String Contains All Binary Codes of Size K
+304. Range Sum Query 2D - Immutable
+665. Non-decreasing Array
+41. First Missing Positive
+1822. Sign of the Product of an Array
+2215. Find the Difference of Two Arrays
+1603. Design Parking System
+2348. Number of Zero-Filled Subarrays
+2405. Optimal Partition of String
+1396. Design Underground System
+2483. Minimum Penalty for a Shop
+68. Text Justification
+2306. Naming a Company
+
+
+
+
+# Two pointers
+
+
+# Sliding window 
+
+
+# stack
+
+
+# binary search
+
+
+
+
+# LinkedList  
+
+
+
+# Trees
+
+
+# Tries
+
+
+
+# Heap/Priority queue
+
+# Backtracking
+
+
+# Graphs
+
+
+# Advanced Graphs 
+
+
+# 1-D DP
+
+# 2-D DP 
+
+
+# Greedy
+
+# Intervals
+
+# Math & Geometry
+
+
+# bit Manipulation
+
+
+# JavaScript

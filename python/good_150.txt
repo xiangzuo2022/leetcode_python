@@ -20,16 +20,16 @@
 121 Best Time to Buy and Sell Stock ok(two pointers)
 3 Longest Substring Without Repeating Characters ok (sliding window)
 424 Longest Repeating Character Replacement ok (sliding window)
-567 (new) Permutation in String (hashtable/array + sliding window)
+567 (new) Permutation in String ok (hashtable/array + sliding window)
 76  * Minimum Window Substring ok (sliding window + multiple hashMaps) code is not easy to write
-239 (new) Sliding Window Maximum
+239 (new) Sliding Window Maximum ok (monotical deque)
 
 # stack
 20 * Valid Parentheses ok (stack and hashmap)
-155 (new)Min Stack
-150 (new)Evaluate Reverse Polish Notation
-22 (new)Generate Parentheses
-739 (new)Daily Temperatures
+155 (new)Min Stack ok (two stacks and maintain a minStack)
+150 (new)Evaluate Reverse Polish Notation ok (stack + corner cases)
+22 (new)Generate Parentheses ok (stack + three conditions)
+739 (new)Daily Temperatures ok (monotical decreasing stack)
 853 (new)Car Fleet
 84 (new)Largest Rectangle in Histogram
 
@@ -49,26 +49,26 @@
 21  Merge Two Sorted Lists ok
 143  Reorder List ok (slow+fast pointer, reverse a linkedlist, merge two linkedlist)
 19  * Remove Nth Node From End Of List ok (slow and fast pointers)
-138 Copy List with Random Pointer
-2 Add Two Numbers
+138 (new)Copy List with Random Pointer
+2 (new)Add Two Numbers
 141 Detect Cycle in a Linked List ok(slow + fast pointers)
-287 Find the Duplicate Number
-146 LRU Cache
+287 (new)Find the Duplicate Number
+146 (new)LRU Cache
 23 Merge K Sorted Lists ok
-25 Reverse Nodes in k-Group
+25 (new)Reverse Nodes in k-Group
 
 
 # Trees
 226  * Invert/Flip Binary Tree ok (revursion)
 104 * Maximum Depth of Binary Tree ok (DFS + recursive) a couple of different solutions
-543  Diameter of Binary Tree
-110 Balanced Binary Tree
+543  (new)Diameter of Binary Tree
+110 (new)Balanced Binary Tree
 100 Same Tree ok (recursion)
 572 * Subtree of Another Tree ok (uses the same tree code in 100)
 235 * Lowest Common Ancestor of BST ok (iterative)
 102 Binary Tree Level Order Traversal ok (BFS)
-199 Binary Tree Right Side View
-1448  Count Good Nodes in Binary Tree
+199 (new)Binary Tree Right Side View
+1448 (new)Count Good Nodes in Binary Tree
 98  * Validate Binary Search Tree ok (be careful about the boundary)
 230 * Kth Smallest Element in a BST ok (iterative + stack)
 124 * Binary Tree Maximum Path Sum ok (dfs) understand when should be a split and when should not
@@ -80,24 +80,24 @@
 212 * Word Search II ok (trie Tree and code is not easy to write)
 
 # Heap / priority queue
-703 Kth Largest Element in a Stream
-1046 Last Stone Weight
-973 K Closest Points to Origin
-215  Kth Largest Element in an Array
-621  Task Scheduler
-355  Design Twitter
-295  Find Median from Data Stream
+703 (new)Kth Largest Element in a Stream
+1046 (new)Last Stone Weight
+973 (new)K Closest Points to Origin
+215  (new)Kth Largest Element in an Array
+621  (new)Task Scheduler
+355  (new)Design Twitter
+295  (new)Find Median from Data Stream
 
 # Backtracking
-78 Subsets
-39 Combination Sum
-46 Permutations
-90 Subsets II
-40 Combination Sum II
-131 Palindrome Partitioning
-17 Letter Combinations of a Phone Number
-51 N-Queens
-79 Word Search done (brute force + backtracking)
+78 (new)Subsets
+39 (new)Combination Sum
+46 (new)Permutations
+90 (new)Subsets II
+40 (new)Combination Sum II
+131 (new)Palindrome Partitioning
+17 (new)Letter Combinations of a Phone Number
+51 (new)N-Queens
+79 Word Search ok (brute force + backtracking)
 
 # Graph
 200 * Number of Islands ok (BFS)
