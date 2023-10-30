@@ -30,18 +30,18 @@
 150 (new)Evaluate Reverse Polish Notation ok (stack + corner cases)
 22 (new)Generate Parentheses ok (stack + three conditions)
 739 (new)Daily Temperatures ok (monotical decreasing stack)
-853 (new)Car Fleet
-84 (new)Largest Rectangle in Histogram
+853 (new)Car Fleet ok (stack + sorting)
+84 * (new)Largest Rectangle in Histogram ok (monotic stack) not easy to understand
 
 
 # Binary Search
-704 (new)Binary Search
-74 (new)Search a 2D Matrix
-875 (new)Koko Eating Bananas
+704 (new)Binary Search ok (basic binary search)
+74 * (new)Search a 2D Matrix ok (two binary seraches)
+875 * (new)Koko Eating Bananas ok (binary search)
 153 (new)Find Minimum in Rotated Sorted Array ok (binary search)
 33 * Search in Rotated Sorted Array ok (binary search)
-981 (new)Time Based Key-Value Store
-4 (new)Median of Two Sorted Arrays
+981 (new)Time Based Key-Value Store ok (binary search + hashmap)
+4 * (new)Median of Two Sorted Arrays ok (比较难理解第一次，多做几遍)
 
 
 # Linked List
